@@ -234,7 +234,7 @@ const BankStatementUploader = () => {
       if (transactionType) params.transactionType = transactionType;
 
       const response = await axios.post(
-        "https://localhost:7050/api/BankStatement/process",
+        "https://lagetronix-app-excel-processor.azurewebsites.net/",
         payload,
         {
           params,
